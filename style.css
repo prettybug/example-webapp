@@ -1,0 +1,17 @@
+.title-image{
+    height: auto;
+    max-width: 300px;
+    margin-bottom: 1rem;
+}
+
+.form-label{
+    font-size: 1.2rem;
+}
+
+.submit-btn{
+    background-color: orchid;
+    border-color: orchid;
+    border-radius: 10%;
+    color: white;
+    font-weight: bold;
+}
