@@ -1,4 +1,7 @@
 {
+  "name": "simple-landing-page",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "@vercel/postgres": "^0.5.0",
     "cors": "^2.8.5",
@@ -8,3 +11,4 @@
     "vercel": "^32.5.0"
   }
 }
+ 
