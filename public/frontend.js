@@ -1,5 +1,5 @@
 const API_URL = "https://example-webapp.vercel.app/api";
-const API_ROUTE = "";
+const API_ROUTE = "/animals";
 const searchInput = document.getElementById("color");
 const searchForm = document.getElementById("search-animals");
 const resultList = document.getElementById("search-results");
