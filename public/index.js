@@ -1,4 +1,5 @@
 const API_URL = "http://localhost:3000/api";
+const API_ROUTE = "";
 const searchInput = document.getElementById("color");
 const searchForm = document.getElementById("search-animals");
 const resultList = document.getElementById("search-results");
@@ -29,9 +30,9 @@ function buildSearchResults(animals){
 }
 
 async function getAnimals (){
-    fetch(API_URL + "/animals", {method: "GET"})
+    fetch(API_URL + API_ROUTE, {method: "GET"})
     .then(res => res.json())
-    .then (body => {animals = body.data});
+    .then (body => {animals = body.animals});
 }
 
 window.onload = async () => {
