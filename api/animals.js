@@ -5,6 +5,6 @@ const example_data = [
     {name: "Wombat", color: "brown"},
   ]
 
-export function getAnimals() {
-    return example_data;
+export default (request, response) => {
+    return response.json({animals: example_data});
 }
