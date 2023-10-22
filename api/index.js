@@ -1,3 +1,5 @@
+import { getAnimals } from "./animals";
+
 export default (request, response) => {
-    return response.json({message: "Hello World!"})
+    return response.json({animals: getAnimals()});
 }
