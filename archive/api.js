@@ -7,6 +7,7 @@ app.use(cors({
 }))
 const port = 3000
 
+/*
 const connection = mysql.createConnection({
     host: '127.0.0.1',
     port: '3306',
@@ -28,19 +29,28 @@ connection.query("INSERT INTO animals (name, color) VALUES ('Turtle', 'green');"
 connection.query("INSERT INTO animals (name, color) VALUES ('Monkey', 'brown');")
 connection.query("INSERT INTO animals (name, color) VALUES ('Polar Bear', 'white');")
 connection.query("INSERT INTO animals (name, color) VALUES ('Giraffe', 'yellow');")
+*/
+
+const example_data = [
+  {name: "Tiger", color: "yellow"}, 
+  {name: "Parrot", color: "red"},
+  {name: "Turtle", color: "green"},
+  {name: "Wombat", color: "brown"},
+]
 
 app.get('/', (req, res) => {
   res.send('API for Colorful Animals is ready!')
 })
 
 app.get('/animals', (req, res) => {
-  connection.query('SELECT * FROM animals', (err, rows, fields) => {
+  /*connection.query('SELECT * FROM animals', (err, rows, fields) => {
       if(err){
           res.send(400, "No Animals found.");
       } else if(rows){
           res.status(200).json({data: rows})
       }
-  })
+  })*/
+  res.status(200).json({data: example_data})
 })
 
 app.listen(port, () => {

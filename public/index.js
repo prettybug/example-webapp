@@ -1,4 +1,4 @@
-const API_URL = "http://localhost:3000"
+const API_URL = "http://localhost:3000";
 const searchInput = document.getElementById("color");
 const searchForm = document.getElementById("search-animals");
 const resultList = document.getElementById("search-results");
