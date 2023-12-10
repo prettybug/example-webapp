@@ -35,6 +35,13 @@ async function getAnimals (){
     .then (body => {animals = body.animals});
 }
 
+async function getFruits (){
+    fetch(API_URL + API_ROUTE, {method: "GET"})
+    .then(res => res.json())
+    .then (body => {console.log(body.fruits)});
+}
+
 window.onload = async () => {
     await getAnimals();
+    await getFruits();
 }
