@@ -30,13 +30,13 @@ function buildSearchResults(animals){
 }
 
 async function getAnimals (){
-    fetch(API_URL + API_ROUTE, {method: "GET"})
+    fetch(API_URL + "/animals", {method: "GET"})
     .then(res => res.json())
     .then (body => {animals = body.animals});
 }
 
 async function getFruits (){
-    fetch(API_URL + API_ROUTE, {method: "GET"})
+    fetch(API_URL + "/fruits", {method: "GET"})
     .then(res => res.json())
     .then (body => {console.log(body)});
 }
