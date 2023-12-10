@@ -38,7 +38,7 @@ async function getAnimals (){
 async function getFruits (){
     fetch(API_URL + API_ROUTE, {method: "GET"})
     .then(res => res.json())
-    .then (body => {console.log(body.fruits)});
+    .then (body => {console.log(body)});
 }
 
 window.onload = async () => {
